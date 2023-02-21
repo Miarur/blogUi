@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600&family=Roboto+Condensed&family=Roboto:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../styles/components/modal/modal.css">
+        <title>Modal</title>
+    </head>
+
+    <body class="body">
+        <div class="modal">
+            <div class="modal__wrap">
+                <form class="modal__block" action="##">
+                    <div class="button__block button_close">
+                        <img class="button__img" src="../assets/icons/close.svg" alt="close-btn">
+                    </div>
+                    <div class="modal__field">
+                        <label class="field__label" for="title">Title</label>
+                        <input class="field__input" type="text" id="title" name="title">
+                    </div>
+
+                    <div class="field__description">
+                        <label class="field__label" for="description">Description</label>
+                        <textarea class="field__area" id="description" name="description"></textarea>
+                    </div>
+
+                    <div class="modal-buttons__container">
+                        <div class="button__block button_upload">
+                            <img class="button__img " src="../assets/icons/chain.svg" alt="upload-btn">
+                            <p class="button__text">Upload</p>
+                        </div>
+
+                        <div class="button__block button_submit">
+                            <p class="button__text">Submit</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="../js/burger-menu.js"></script>
+    </body>
+</html>

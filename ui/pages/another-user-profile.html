@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600&family=Roboto+Condensed&family=Roboto:wght@400;500&display=swap"
+			rel="stylesheet" 
+		/>
+		<link rel="stylesheet" href="../styles/pages/user-profile/main.css">
+		<title>Awesome blog</title>
+	</head>
+
+	<body class="body">
+
+		<header class="header header_loginned">
+			<div class="wrapper header__wrapper">
+				<nav class="sidebar">
+					<div class="sidebar__btn" >
+						<span class="line"></span>
+					</div>
+					<ul class="sidebar__block">
+						<li class="sidebar__item_user">
+							<img src="../assets/img/avatar.png" alt="user">
+							<a class="sidebar__link" href="./another-user-profile.html">Saurabh Kumar</a>
+						</li>
+
+						<li class="sidebar__item">
+							<img class="sidebar__icon" src="../assets/icons/home.svg" alt="home">
+							<a class="sidebar__link" href="../pages/news-feed.html">Home</a>
+						</li>
+						<li class="sidebar__item">
+							<img class="sidebar__icon" src="../assets/icons/profile.svg" alt="profile">
+							<a class="sidebar__link" href="../pages/user-profile.html">Profile</a>
+						</li>
+						<li class="sidebar__item">
+							<img class="sidebar__icon" src="../assets/icons/setting.svg" alt="settings">
+							<a class="sidebar__link" href="../pages/user-settings.html">Settings</a>
+						</li>
+
+						<div class="button__block button_logout_burger">
+							<img class="button__img button__img_logout" src="../assets/icons/logout-btn.svg" alt="logout-btn">
+							<p class="button__text button__text_logout">Logout</p>
+						</div>
+					</ul>
+				</nav>
+
+				<div class="logo">
+					<a href="../pages/login.html" class="logo__link">
+						<img class="logo__image" src="../assets/icons/logo.svg" alt="logo_img">
+					</a>
+					<h1 class="logo__title">AwB</h1>
+				</div>
+				<div class="search">
+					<img class="search__icon" src="../assets/icons/search-ico.svg" alt="search-ico">
+					<input class="search__field" type="search">
+				</div>
+				<div class="button__block button_logout">
+					<img class="button__img button__img_logout" src="../assets/icons/logout-btn.svg" alt="logout-btn">
+					<p class="button__text button__text_logout">Logout</p>
+				</div>
+			</div>
+		</header>
+
+		<div class="content__wrapper">
+			<div class="user">
+				<div class="user-img">
+					<img class="user-img__item" src="../assets/img/user-img.png" alt="user-img">
+				</div>
+				
+				<div class="user-name">
+					<span class="user-name__text">Andrey Smolko</span>
+				</div>
+
+				<div class="user-btn__group">
+					<div class="button__block button_user">
+						<img class="button__img button__img_user" src="../assets/icons/follower.svg" alt="follower">
+						<span class="button__text button__text_user">Followers</span>
+						<span class="button__value">520</span>
+					</div>
+
+					<div class="button__block button_user">
+						<img class="button__img button__img_user" src="../assets/icons/following.svg" alt="following">
+						<span class="button__text button__text_user">Following</span>
+						<span class="button__value">520</span>
+					</div>
+				</div>
+
+				<div class="user-btn__group">
+					<div class="button__block button_user_subscribe">
+						<img class="button__img button__img_user" src="../assets/icons/subscribe.svg" alt="subscribe">
+						<span class="button__text button__text_white">Subscribe</span>
+					</div>
+
+					<div class="button__block button_user_unsubscribe">
+						<img class="button__img button__img_user" src="../assets/icons/unsubscribe.svg" alt="unsubscribe">
+						<span class="button__text button__text_white">Unsubscribe</span>
+					</div>
+				</div>
+
+				<div class="user-about">
+					<p class="user-about__title">About</p>
+					<p class="user-about__description">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar nisl ipsum morbi diam. Lorem
+						ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar nisl ipsum morbi diam.Lorem ipsum
+						dolor sit amet, consectetur adipiscing elit. Pulvinar nisl ipsum morbi diam.
+					</p>
+				</div>
+			</div>
+
+			<div class="user-feed">
+				<div class="button-controls">
+					<div class="button__block button_sort">
+						<img class="button__img button__img_sort-old" src="../assets/icons/sort.svg" alt="sort-btn">
+						<p class="button__text button__text_sort">date old</p>
+					</div>
+
+					<div class="button__block button_sort">
+						<img class="button__img button__img_sort-new" src="../assets/icons/sort.svg" alt="sort-btn">
+						<p class="button__text button__text_sort">date new</p>
+					</div>
+
+					<div class="button__block button_add_hidden ">
+						<img class="button__img button__img_add" src="../assets/icons/plus.svg" alt="add-post">
+						<p class="button__text button__text_add">add post</p>
+					</div>
+				</div>
+				
+				<div class="post__list">
+					<div class="post__block">
+						<div class="post__head">
+							<img class="post__img" src="../assets/img/avatar.png" alt="avatar">
+							<p class="post__author">Saurabh Kumar</p>
+							<img class="post__options" src="../assets/icons/options.svg" alt="post-options">
+						</div>
+						<div class="post__body">
+							<h3 class="post__title">Covid update</h3>
+							<p class="post__description">
+								Union Health Minister Shri Mansukh Mandaviya reviews
+								#COVID19 response in Kerala with Chief Minister Shri Pinarayi Vijayan and Health
+								Minister of Kerala, Ms. Veena George
+							</p>
+						</div>
+						<div class="post__footer">
+							<div class="like__counter-block">
+								<a class="like__img"></a>
+								<span class="like__value">331</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="post__block">
+						<div class="post__head">
+							<img class="post__img" src="../assets/img/avatar.png" alt="avatar">
+							<p class="post__author">Saurabh Kumar</p>
+							<img class="post__options" src="../assets/icons/options.svg" alt="post-options">
+						</div>
+						<div class="post__body">
+							<h3 class="post__title">Covid update</h3>
+							<p class="post__description">
+								Union Health Minister Shri Mansukh Mandaviya reviews
+								#COVID19 response in Kerala with Chief Minister Shri Pinarayi Vijayan and Health
+								Minister of Kerala, Ms. Veena George
+							</p>
+						</div>
+						<div class="like__counter-block">
+							<a class="like__img"></a>
+							<span class="like__value">10</span>
+						</div>
+					</div>
+
+					<div class="post__block">
+						<div class="post__head">
+							<img class="post__img" src="../assets/img/avatar.png" alt="avatar">
+							<p class="post__author">Saurabh Kumar</p>
+							<img class="post__options" src="../assets/icons/options.svg" alt="post-options">
+						</div>
+						<div class="post__body">
+							<h3 class="post__title">Covid update</h3>
+							<p class="post__description">
+								Union Health Minister Shri Mansukh Mandaviya reviews
+								#COVID19 response in Kerala with Chief Minister Shri Pinarayi Vijayan and Health
+								Minister of Kerala, Ms. Veena George
+							</p>
+						</div>
+						<div class="like__counter-block">
+							<a class="like__img"></a>
+							<span class="like__value">101</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/burger-menu.js"></script>
+		<script src="../js/like-counter.js"></script>
+		<script src="../js/search-field.js"></script>
+	</body>
+</html>

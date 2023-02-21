@@ -1,0 +1,97 @@
+@import './mixins';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background: url('@/assets/img/background.png') no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+}
+
+.content__wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0 70px;
+}
+
+.field__label {
+    padding-top: 30px;
+    width: 100%;
+    min-width: 320px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: $text-main-color;
+
+    @media (max-width: $mobile-width) {
+        min-width: 90vw;
+        @include font(16px, 18px, 400, normal);
+    }
+}
+
+.field__label:nth-of-type(1) {
+    padding-top: 65px;
+}
+
+.field__label.field_modal {
+    padding-top: 0px;
+}
+
+.field__label.field_reset {
+    padding-top: 120px;
+
+    @media (max-width: $mobile-width) {
+        padding-top: 40px;
+    }
+}
+
+.field_signup {
+    padding-top: 15px;
+
+    @media (max-width: $mobile-width) {
+        padding-top: 40px;
+    }
+}
+
+.field_signup:nth-of-type(1) {
+    padding-top: 65px;
+}
+
+
+.error-message {
+    height: 5px;
+    margin: 0;
+    padding-left: 0;
+    color: red;
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+}
+
+.error-message__hidden {
+    visibility: hidden;
+    height: 5px;
+    margin: 0;
+    padding-left: 10px;
+    color: red;
+    font-size: 14px;
+    transition: all .0s ease-in-out;
+}

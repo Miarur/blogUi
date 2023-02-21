@@ -1,0 +1,121 @@
+@import '../../components/modal/modal.css';
+
+.body {
+    background-image: none;
+    background-color: var(--main-color);
+}
+
+.news-feed__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 657px;
+}
+
+.button-controls {
+    margin: 15px 0px 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 258px;
+    gap: 0px 10px;
+}
+
+.post__list {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    gap: 42px 0px;
+}
+
+.post__block {
+    padding: 22px 22px;
+    max-width: 656px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+.post__head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+}
+
+.post__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.post__author {
+    padding-left: 7px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    color: var(--color-black);
+}
+
+.post__options {
+    margin-left: auto;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.post__body {
+    margin-top: 12px;
+}
+
+.post__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    color: var(--color-black);
+}
+
+.post__description {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.like__counter-block {
+    margin-top: 11px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 10px;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-black);
+    cursor: pointer;
+}
+
+.like__img:hover {
+    transition: .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.like__img:active {
+    transition: .1s ease-in-out;
+    transform: scale(0.7);
+}
+
+.like__img {
+    display: block;
+    width: 18px;
+    height: 16px;
+    background: url("../../../assets/icons/like.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.like__img_active {
+    background: url('../../../assets/icons/like-active.svg');
+}

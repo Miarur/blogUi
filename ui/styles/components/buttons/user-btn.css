@@ -1,0 +1,85 @@
+@import "./button.css";
+
+.button__block.button_user {
+    padding: 12px 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 185px;
+    height: 51px;
+    font-size: 18px;
+    line-height: 20px;
+    background-color: var(--color-white);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.button__img.button__img_user {
+    width: 26px;
+    height: 26px;
+}
+
+.button__text.button__text_user {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--color-black);
+}
+
+.button__text.button__text_white {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-white);
+}
+
+.button__block.button_user_subscribe {
+    width: 185px;
+    height: 51px;
+    background-color: var(--color-subscribe);
+    justify-content: center;
+    gap: 0px 20px;
+    color: var(--color-white);
+    border-radius: 16px;
+    background: var(--color-subscribe);
+    z-index: 10;
+}
+
+.button__block.button_user_subscribe:hover {
+    animation: backgrounds 3s ease-in-out infinite;
+}
+
+.button__block.button_user_unsubscribe {
+    width: 185px;
+    height: 51px;
+    background-color: var(--color-unsubscribe);
+    justify-content: center;
+    gap: 0px 8px;
+    color: var(--color-white);
+    border-radius: 16px;
+}
+
+.button__block.button_user_unsubscribe:hover {
+    background-color: var(--color-black);
+}
+
+.button__block.button_user_unsubscribe:active,
+.button__block.button_user_subscribe:active {
+    transition: 0.05s ease-in;
+    -webkit-box-shadow: 9px 19px 10px -11px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 9px 19px 10px -11px rgba(0, 0, 0, 0.7);
+    box-shadow: 9px 19px 10px -11px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes backgrounds {
+    20% {background-color: #10a73a;}
+    40% {background-color: var(--color-subscribe)}
+    60% {background-color: #10a73a;}
+    80% {background-color: var(--color-subscribe)}
+    100% {background-color:#10a73a;} 
+}

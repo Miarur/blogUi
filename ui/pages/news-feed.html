@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600&family=Roboto+Condensed&family=Roboto:wght@400;500&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="../styles/pages/news-feed/main.css">
+		<title>Awesome blog</title>
+		<script src="../js/initialStorage.js"></script>
+	</head>
+
+	<body class="body">
+		<header class="header header_loginned">
+			<div class="wrapper header__wrapper">
+				<nav class="sidebar">
+					<div class="sidebar__btn" >
+						<span class="line"></span>
+					</div>
+					<ul class="sidebar__block">
+						<li class="sidebar__item_user">
+							<img src="../assets/img/avatar.png" alt="user">
+							<a class="sidebar__link" href="./another-user-profile.html">Saurabh Kumar</a>
+						</li>
+
+						<li class="sidebar__item">
+							<img class="sidebar__icon" src="../assets/icons/home.svg" alt="home">
+							<a class="sidebar__link" href="../pages/news-feed.html">Home</a>
+						</li>
+						<li class="sidebar__item">
+							<img class="sidebar__icon" src="../assets/icons/profile.svg" alt="profile">
+							<a class="sidebar__link" href="../pages/user-profile.html">Profile</a>
+						</li>
+						<li class="sidebar__item">
+							<img class="sidebar__icon" src="../assets/icons/setting.svg" alt="settings">
+							<a class="sidebar__link" href="../pages/user-settings.html">Settings</a>
+						</li>
+
+						<div class="button__block button_logout_burger">
+							<img class="button__img button__img_logout" src="../assets/icons/logout-btn.svg" alt="logout-btn">
+							<p class="button__text button__text_logout">Logout</p>
+						</div>
+					</ul>
+				</nav>
+
+				<div class="logo">
+					<a href="../pages/login.html" class="logo__link">
+						<img class="logo__image" src="../assets/icons/logo.svg" alt="logo_img">
+					</a>
+					<h1 class="logo__title">AwB</h1>
+				</div>
+
+				<div class="search">
+					<img class="search__icon" src="../assets/icons/search-ico.svg" alt="search-ico">
+					<input class="search__field" type="search">
+				</div>
+
+				<div class="button__block button_logout">
+					<img class="button__img button__img_logout" src="../assets/icons/logout-btn.svg" alt="logout-btn">
+					<p class="button__text button__text_logout">Logout</p>
+				</div>
+			</div>
+		</header>
+
+		<div class="news-feed">
+			<div class="wrapper news-feed__wrapper">
+				<div class="button-controls">
+					<div class="button__block button_sort">
+						<img class="button__img button__img_sort-old" src="../assets/icons/sort.svg" alt="sort-btn">
+						<p class="button__text button__text_sort">date old</p>
+					</div>
+
+					<div class="button__block button_sort">
+						<img class="button__img button__img_sort-new" src="../assets/icons/sort.svg" alt="sort-btn">
+						<p class="button__text button__text_sort">date new</p>
+					</div>
+
+					<div class="button__block button_add">
+						<img class="button__img button__img_add" src="../assets/icons/plus.svg" alt="add-post">
+						<p class="button__text button__text_add">add post</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal">
+            <div class="modal__wrap">
+                <div class="modal__block">
+                    <div class="button__block button_close">
+                        <img class="button__img" src="../assets/icons/close.svg" alt="close-btn">
+                    </div>
+                    <div class="modal__field">
+                        <label class="field__label" for="title">Title</label>
+                        <input class="field__input" type="text" id="title" name="title">
+                    </div>
+
+                    <div class="modal__field modal__field_description">
+                        <label class="field__label" for="description">Description</label>
+                        <textarea class="field__area" id="description" name="description"></textarea>
+                    </div>
+
+                    <div class="modal-buttons__container">
+                        <div class="button__block button_upload">
+                            <img class="button__img " src="../assets/icons/chain.svg" alt="upload-btn">
+                            <p class="button__text">Upload</p>
+                        </div>
+
+                        <div class="button__block button_submit">
+                            <p class="button__text">Submit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<script src="../js/burger-menu.js"></script>
+		<script src="../js/get-posts.js"></script>
+		<script type="module" src="../js/like-counter.js"></script>
+		<script src="../js/add-post.js"></script>
+		<script src="../js/search-field.js"></script>
+	</body>
+</html>

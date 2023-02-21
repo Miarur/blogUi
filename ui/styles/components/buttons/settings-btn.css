@@ -1,0 +1,47 @@
+@import "./button.css";
+
+.button__block.button_settings {
+    margin-top: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    background-color: var(--settings-btn);
+    color: var(--color-white);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.button__block.button_settings:hover,
+.button__block.button_settings_all:hover {
+    background-color: var(--modal-submit);
+    border: 1px solid var(--color-white);
+}
+
+.button__block.button_settings:active,
+.button__block.button_settings_all:active {
+    transition: 0.05s ease-in;
+    -webkit-box-shadow: 9px 19px 10px -11px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 9px 19px 10px -11px rgba(0, 0, 0, 0.7);
+    box-shadow: 9px 19px 10px -11px rgba(0, 0, 0, 0.7);
+}
+
+.button__text.button__text_settings {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.button__block.button_settings_all {
+    margin: 42px auto 0 auto;
+    width: 200px;
+    height: 60px;
+    background-color: var(--settings-btn);
+}

@@ -1,0 +1,74 @@
+@import "./button.css";
+
+.button__block.button_login {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    background-color: var(--color-dark);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.button__block.button_login:hover {
+    transform: scale(1.1);
+    -webkit-box-shadow: 1px 9px 15px 0px rgba(0, 144, 255, 0.3);
+    -moz-box-shadow: 1px 9px 15px 0px rgba(0, 144, 255, 0.3);
+    box-shadow: 1px 9px 15px 0px rgba(0, 144, 255, 0.3);
+}
+
+.button__block.button_login:active {
+    transform: scale(0.9);
+}
+
+.button__img.button__img_login {
+    width: 26px;
+    height: 25px;
+}
+
+.button__text.button__text_login {
+    margin-left: 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.button__block.button_form {
+    margin: 75px auto 0 auto;
+    width: 200px;
+    min-height: 50px;
+    background: var(--form-submit);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.button__block.button_form:hover {
+    transform: translateX(20px);
+    background-color: var(--settings-btn);
+}
+
+.button__block.button_form:active {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.button__text.button_form-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--color-white);
+}
